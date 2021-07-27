@@ -13,7 +13,9 @@
   </head>
   <body>
     <header class="bg-yellow-100">
-      <section class="container mx-auto flex items-center justify-around py-12">
+      <section
+        class="container mx-auto md:flex items-center justify-around py-12 px-4"
+      >
         <div class="space-y-4">
           <h1 class="text-7xl font-bold uppercase">
             <span class="text-yellow-400">Be the penguin</span> <br />
@@ -32,6 +34,10 @@
               bg-green-500
               rounded-xl
               font-medium
+              bg-gradient-to-r
+              from-green-400
+              to-blue-500
+              focus:from-pink-500 focus:to-yellow-50
             "
           >
             <svg
@@ -56,7 +62,24 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <main>
+      <!-- Woman jacket section -->
+      <section class="container mx-auto px-4">
+        <h2 class="text-3xl uppercase text-gray-800 font-bold">woman jacket</h2>
+        <!-- woman jacket container -->
+        <div class="grid grid-cols-3 gap-7">
+          <div class="shadow-lg rounded-2xl">
+            <img src="images/jacket-1.png" alt="" />
+          </div>
+          <div><img src="images/jacket-2.png" alt="" /></div>
+          <div><img src="images/jacket-3.png" alt="" /></div>
+        </div>
+      </section>
+      <!-- Man jacket section -->
+      <section>
+        <h1>Man jacket</h1>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
