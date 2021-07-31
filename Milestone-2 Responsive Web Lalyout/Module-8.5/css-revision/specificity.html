@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .first-heading {
+        color: red;
+      }
+      h1 {
+        color: aqua;
+      }
+      h1 {
+        color: blue !important;
+      }
+      #thired-heading {
+        color: blueviolet;
+      }
+      p {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="first-heading">My Heading number-1</h1>
+    <h1 class="first-heading">My Heading number-2</h1>
+    <h1 id="thired-heading" style="color: yellow">My Heading number-3</h1>
+    <h1>My Heading number-4</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
+      nobis veniam. Quod sit et inventore reiciendis sunt voluptate dolorum sint
+      consectetur ratione eveniet magni, consequatur doloribus facere veniam
+      quia nam. Nostrum, dolor? Veniam sit animi, velit molestiae, labore,
+      repellat minus temporibus recusandae possimus iste aperiam vitae
+      asperiores quisquam eveniet sint!
+    </p>
+  </body>
+</html>

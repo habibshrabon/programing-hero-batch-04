@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.btn-style {
+  width: 170px;
+  height: 60px;
+  left: 853.68px;
+  top: 424px;
+  background: linear-gradient(180deg, #3d4ff3 0%, #3543bc 100%);
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+.card img {
+  background-color: #f1f1f1;
+}
