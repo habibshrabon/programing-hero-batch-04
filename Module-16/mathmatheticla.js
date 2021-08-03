@@ -7,4 +7,4 @@ var totalPrice = onionPrice * eggPrice;
 
 var age = 14;
 age++;
-console.log(age);
+// console.log(age);
