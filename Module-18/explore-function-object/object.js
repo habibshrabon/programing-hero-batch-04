@@ -1,4 +1,9 @@
-var student1 = { id: 115, name: "Ahsan", marks: 81, phone: 369258 };
+var student1 = {
+  id: 115,
+  name: "Ahsan",
+  marks: 81,
+  phone: 369258,
+};
 
 var mobile = {
   colors: "black",
