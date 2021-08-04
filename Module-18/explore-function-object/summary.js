@@ -13,28 +13,25 @@ if (phones.indexOf("lf") != -1) {
   console.log("Lg is abailable now");
 }
 
-//loop 
-var num=0;
-while (num,=10) {
-    num++;
+//loop
+var num = 0;
+while (num <= 10) {
+  num++;
 }
 
-for (var i = 0; i < phones.length; i++) {
-   
-}
+for (var i = 0; i < phones.length; i++) {}
 
 //function
 function addThreeNumbers(number1, number2, number3) {
-    var total = number1 + number2 + number3;
-    return total;
+  var total = number1 + number2 + number3;
+  return total;
 }
 
-addThreeNumbers(87, 41, 56)
+addThreeNumbers(87, 41, 56);
 
 // objects
-var microphone={
-    brand: 'blue yeti',
-    color: 'black',
-    price: '1000'
+var microphone = {
+  brand: "blue yeti",
+  color: "black",
+  price: "1000",
 };
-
