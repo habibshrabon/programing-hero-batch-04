@@ -18,4 +18,10 @@ function woodCalculator(chairQuantity, tableQuantity, bedQuantity) {
 }
 
 const firstOption = woodCalculator(1, 1, 1);
-console.log(firstOption);
+// console.log(firstOption);
+
+let sum = 0;
+for (let i = 0; i <= 3; i++) {
+  sum = sum + i;
+  console.log(sum);
+}
