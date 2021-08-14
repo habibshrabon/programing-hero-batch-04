@@ -16,7 +16,16 @@
       <h1>well come to my blog website</h1>
     </header>
     <main>
-      <section class="blogs">
+      <section id="blogs" class="blogs">
+        <header>
+          <h2>Blogs List</h2>
+          <ul id="blog-list">
+            <li>Blog-1</li>
+            <li>Blog-2</li>
+            <li>Blog-3</li>
+            <li>Blog-4</li>
+          </ul>
+        </header>
         <article class="blog">
           <h3>My Awesome Blog-1</h3>
           <p>
@@ -65,6 +74,41 @@
       third.innerText = "Title Updated By JS";
       third.style.backgroundColor = "red";
       third.style.padding = "25px";
+
+      //Create and add element by using js
+      // create the element
+      const li = document.createElement("li");
+      li.innerText = "Blog-5";
+      //Where to add
+      const ul = document.getElementById("blog-list");
+
+      //append ner element
+      ul.appendChild(li);
+
+      //add article
+      const article = document.createElement("article");
+      article.classList.add("blog");
+
+      //first rule of article.
+
+      // const h3 = document.createElement("h3");
+      // h3.innerText = "My Awesome Blog-4";
+      // const p = document.createElement("p");
+      // p.innerText =
+      //   "Vitac A error culps qluas tempora ipsa iusto nostrum inventore cupidiate molestiase dolorem";
+      // article.appendChild(h3);
+      // article.appendChild(p);
+
+      //second rule of article
+
+      article.innerHTML = `
+        <h3>My Awesome Blog-4</h3>
+        <p>Vitac A error culps qluas tempora ipsa iusto nostrum inventore cupidiate molestiase dolorem.</p>
+      `;
+
+      //parent of article
+      const blogSection = document.getElementById("blogs");
+      blogSection.appendChild(article);
 
       //explore getElementByClassName
       const blogs = document.getElementsByClassName("blog");
