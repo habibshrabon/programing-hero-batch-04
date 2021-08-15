@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="clicking-method"></p>
+    <input id="input-fill" type="text" />
+    <button id="handel-update">Update</button>
+    <button onclick="handelJustFunction()">Just Function</button>
+    <button id="handel-event">Direct add event listener</button>
+
+    <script>
+      //using function call
+      function handelJustFunction() {
+        const clickMethod = document.getElementById("clicking-method");
+        clickMethod.innerText = "Set by using function";
+      }
+
+      //Direct add event listener
+      document
+        .getElementById("handel-event")
+        .addEventListener("click", function () {
+          const p = document.getElementById("clicking-method");
+          p.innerText = "Set by using direct add event listener";
+        });
+
+      //Direct add event listener for updates
+      document
+        .getElementById("handel-update")
+        .addEventListener("click", function () {
+          const nameField = document.getElementById("input-fill");
+          const p = document.getElementById("clicking-method");
+          p.innerText = nameField.value;
+          nameField.value = "";
+        });
+    </script>
+  </body>
+</html>
