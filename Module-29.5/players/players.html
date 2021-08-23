@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Players</title>
+    <!-- <style>
+      .player:first-child {
+        background-color: aqua;
+      }
+      .player-name {
+        font: size 1.5em;
+        font-weight: 600;
+        color: goldenrod;
+      }
+    </style> -->
+  </head>
+  <body>
+    <header>
+      <h1>Players States</h1>
+    </header>
+    <main>
+      <section id="players">
+        <div class="player">
+          <h4 class="player-name">player - 1</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+            repudiandae reiciendis quisquam quod aut. Accusamus labore neque
+            quam, minima, magnam reiciendis tempore maiores ipsam quaerat
+            impedit facere suscipit earum quae.
+          </p>
+        </div>
+        <div class="player">
+          <h4 class="player-name">player - 2</h4>
+          <p>
+            Unde ullam, quo magni natus vitae esse laudantium obcaecati dolore
+            voluptas assumenda ipsum deleniti in odit repellat tempora beatae ad
+            temporibus voluptatibus eos aliquid dolores consequuntur non
+            distinctio! Nihil, error.
+          </p>
+        </div>
+        <div class="player">
+          <h4 class="player-name">player - 3</h4>
+          <p>
+            A quo delectus reprehenderit quos minus. Quos doloribus, dolore
+            veritatis sint commodi porro sit repudiandae cupiditate at facere,
+            quasi deserunt reiciendis libero dolores rem quidem blanditiis
+            repellat, veniam quam recusandae.
+          </p>
+        </div>
+        <div class="player">
+          <h4 class="player-name">player - 4</h4>
+          <p>
+            Quam quas neque quidem temporibus dicta corrupti labore nobis omnis
+            earum! Accusamus voluptates nemo voluptatem id recusandae! Quos
+            cupiditate assumenda ea, sapiente consequatur a reprehenderit quasi
+            nam, quia corporis quibusdam!
+          </p>
+        </div>
+      </section>
+      <button onclick="addPlayer()">Add Player</button>
+    </main>
+    <script>
+      function setPlayerStyle(player) {
+        player.style.border = "1px solid red";
+        player.style.borderRadius = "15px";
+        player.style.margin = "10px";
+        player.style.padding = "10px";
+      }
+
+      const players = document.getElementsByClassName("player");
+      for (const player of players) {
+        // console.log(player);
+        setPlayerStyle(player);
+        // player.addEventListener("click", function () {
+        //   player.style.backgroundColor = "yellow";
+        // });
+      }
+
+      function addPlayer() {
+        const playerContainer = document.getElementById("players");
+        const player = document.createElement("div");
+        player.classList.add("player");
+        // console.log(player);
+        player.innerHTML = `
+            <h4 class="player-name">New player</h4>
+          <p>
+            Quam quas neque quidem temporibus dicta corrupti labore nobis omnis
+            earum! Accusamus voluptates nemo voluptatem id recusandae! Quos
+            cupiditate assumenda ea, sapiente consequatur a reprehenderit quasi
+            nam, quia corporis quibusdam!
+          </p>
+        `;
+        setPlayerStyle(player);
+        playerContainer.appendChild(player);
+      }
+
+      document
+        .getElementById("players")
+        .addEventListener("click", function (event) {
+          console.log(event);
+          if (event.target.tagName.toLowerCase() == "div") {
+            event.target.style.backgroundColor = "yellow";
+          } else {
+            event.target.parentNode.style.backgroundColor = "yellow";
+          }
+        });
+    </script>
+  </body>
+</html>
