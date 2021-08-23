@@ -23,6 +23,3 @@ const doMath = (x, y) => {
 };
 const total = doMath(12, 5);
 console.log(total);
-
-
-document.getElementById("my-btn").addEventListener(event=>)
