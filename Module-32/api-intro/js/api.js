@@ -17,5 +17,11 @@ function loadPost() {
 }
 
 function displayUsers(data) {
-  console.log(data);
+  const ul = document.getElementById("users");
+  for (const user of data) {
+    // console.log(user.name);
+    const li = document.createElement("li");
+    li.innerText = `Name: ${user.name} Email: ${user.email}`;
+    ul.appendChild(li);
+  }
 }
